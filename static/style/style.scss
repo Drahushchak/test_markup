@@ -1,0 +1,99 @@
+
+*{ 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+}
+
+$gcl: 4;
+$gallary-selector: "";
+
+body{
+    background-color: #f6f6f6;
+}
+
+div.wrapper{
+    max-width: 1366px;
+    margin: auto;
+    header{
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        width: 100%;
+        min-height: 101px;
+        margin: auto;
+        div.container{
+            max-width: 1170px;
+            margin: auto;
+            padding: 0;
+            div.row{
+                margin: auto;
+                nav {
+                    a{
+                        margin-left: 26px;;
+                        font-size: 13px;
+                        color: black;
+                        font-family: 'Montserrat', sans-serif;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        section.text{
+            min-height: 311px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            div.container{
+                margin-top: 12px;
+                padding: 0;
+                div.row{
+                    display: flex;
+                    justify-content: center;
+                    margin: auto;
+                    p{
+                        max-width: 512px;
+                        width: 100%;
+                        text-align: center;
+
+                        &.title{
+                            font-size: 38px;
+                            font-family: 'Montserrat', sans-serif;
+                        }
+                        &.description{
+                            
+                            font-family: 'Nunito Sans', sans-serif;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        section.gallary{
+            display: flex;
+            flex-wrap: wrap;
+            div{
+                min-width: 341.5px;
+                min-height: 301px;
+                display: flex;
+                justify-content: center;
+                &:nth-child(odd){
+                    background-color: #838383;
+                }
+                &:nth-child(even){
+                    background-color: #DDDDDD;
+                }
+                &:nth-child(6){
+                    background-color: #10C9C3;
+                }
+                img{
+                    max-width: 342px;
+                    max-height: 301px;
+                }
+            }
+        }
+    }
+}
+
