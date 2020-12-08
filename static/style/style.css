@@ -44,6 +44,10 @@ div.wrapper header div.container div.row nav a {
   text-transform: uppercase;
 }
 
+div.wrapper header div.container div.row nav a.active {
+  color: #10C9C3;
+}
+
 div.wrapper main section.text {
   min-height: 311px;
   display: -webkit-box;
@@ -86,39 +90,291 @@ div.wrapper main section.text div.container div.row p.description {
   font-size: 18px;
 }
 
-div.wrapper main section.gallary {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media only screen and (min-device-width: 341.5px) and (max-device-width: 683px) {
+  div.wrapper main section.gallary {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[12];
+        grid-template-rows: repeat(12, 1fr);
+  }
+  div.wrapper main section.gallary div {
+    max-height: 301px;
+    max-width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    position: relative;
+  }
+  div.wrapper main section.gallary div:nth-child(odd)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #838383;
+    opacity: 40%;
+  }
+  div.wrapper main section.gallary div:nth-child(even)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #DDDDDD;
+    opacity: 40%;
+  }
+  div.wrapper main section.gallary div:nth-child(5)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #10C9C3;
+    opacity: 40%;
+  }
+  div.wrapper main section.gallary div:nth-child(5)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("/static/image/gallary/look.svg");
+    background-size: 48px, 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  div.wrapper main section.gallary div img {
+    width: 100%;
+    background-color: black;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
-div.wrapper main section.gallary div {
-  min-width: 341.5px;
-  min-height: 301px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media only screen and (min-device-width: 683px) and (max-device-width: 1024.5px) {
+  div.wrapper main section.gallary {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+  }
+  div.wrapper main section.gallary div {
+    max-height: 301px;
+    max-width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    position: relative;
+  }
+  div.wrapper main section.gallary div:nth-child(odd)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #838383;
+    opacity: 40%;
+  }
+  div.wrapper main section.gallary div:nth-child(even)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #DDDDDD;
+    opacity: 40%;
+  }
+  div.wrapper main section.gallary div:nth-child(6)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #10C9C3;
+    opacity: 40%;
+  }
+  div.wrapper main section.gallary div:nth-child(6)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("/static/image/gallary/look.svg");
+    background-size: 48px, 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  div.wrapper main section.gallary div img {
+    width: 100%;
+    background-color: black;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
-div.wrapper main section.gallary div:nth-child(odd) {
-  background-color: #838383;
+@media only screen and (min-device-width: 1024.5px) and (max-device-width: 1365px) {
+  div.wrapper main section.gallary {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+  }
+  div.wrapper main section.gallary div {
+    max-height: 301px;
+    max-width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    position: relative;
+  }
+  div.wrapper main section.gallary div:nth-child(odd)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #838383;
+    opacity: 40%;
+  }
+  div.wrapper main section.gallary div:nth-child(even)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #DDDDDD;
+    opacity: 40%;
+  }
+  div.wrapper main section.gallary div:nth-child(5)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #10C9C3;
+    opacity: 40%;
+  }
+  div.wrapper main section.gallary div:nth-child(5)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("/static/image/gallary/look.svg");
+    background-size: 48px, 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  div.wrapper main section.gallary div img {
+    width: 100%;
+    background-color: black;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
-div.wrapper main section.gallary div:nth-child(even) {
-  background-color: #DDDDDD;
-}
-
-div.wrapper main section.gallary div:nth-child(6) {
-  background-color: #10C9C3;
-}
-
-div.wrapper main section.gallary div img {
-  max-width: 342px;
-  max-height: 301px;
+@media only screen and (min-device-width: 1366px) {
+  div.wrapper main section.gallary {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  div.wrapper main section.gallary div {
+    max-height: 301px;
+    max-width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    position: relative;
+  }
+  div.wrapper main section.gallary div:nth-child(odd)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #838383;
+    opacity: 40%;
+  }
+  div.wrapper main section.gallary div:nth-child(even)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #DDDDDD;
+    opacity: 40%;
+  }
+  div.wrapper main section.gallary div:nth-child(6)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #10C9C3;
+    opacity: 40%;
+  }
+  div.wrapper main section.gallary div:nth-child(6)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("/static/image/gallary/look.svg");
+    background-size: 48px, 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  div.wrapper main section.gallary div img {
+    width: 100%;
+    background-color: black;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 /*# sourceMappingURL=style.css.map */

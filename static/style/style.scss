@@ -30,6 +30,9 @@ div.wrapper{
                 margin: auto;
                 nav {
                     a{
+                        &.active{
+                            color: #10C9C3;
+                        }
                         margin-left: 26px;;
                         font-size: 13px;
                         color: black;
@@ -71,29 +74,223 @@ div.wrapper{
                 }
             }
         }
-        section.gallary{
-            display: flex;
-            flex-wrap: wrap;
-            div{
-                min-width: 341.5px;
-                min-height: 301px;
-                display: flex;
-                justify-content: center;
-                &:nth-child(odd){
-                    background-color: #838383;
-                }
-                &:nth-child(even){
-                    background-color: #DDDDDD;
-                }
-                &:nth-child(6){
-                    background-color: #10C9C3;
-                }
-                img{
-                    max-width: 342px;
+        @media only screen and (min-device-width: 341.5px) and (max-device-width: 683px){
+            section.gallary{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(12, 1fr);
+                div{
                     max-height: 301px;
+                    max-width: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    position: relative;
+                    &:nth-child(odd)::before{
+                        content: '';
+                        position: absolute;
+                        top: 0; right: 0;
+                        bottom: 0; left: 0;
+                        background-color: #838383;
+                        opacity: 40%;
+                    }
+                    &:nth-child(even)::before{
+                        content: '';
+                        position: absolute;
+                        top: 0; right: 0;
+                        bottom: 0; left: 0;
+                        background-color: #DDDDDD;
+                        opacity: 40%;
+                    }
+                    &:nth-child(5)::before{
+                        content: '';
+                        position: absolute;
+                        top: 0; right: 0;
+                        bottom: 0; left: 0;
+                        background-color: #10C9C3;
+                        opacity: 40%;
+                    }
+                    &:nth-child(5)::after{
+                        content: '';
+                        position: absolute;
+                        top: 0; right: 0;
+                        bottom: 0; left: 0;
+                        background: url("/static/image/gallary/look.svg");
+                        background-size: 48px, 30px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    img{
+                        width: 100%;
+                        background-color: black;
+                        object-fit: cover;
+                    }
                 }
-            }
+            } 
         }
+        @media only screen and (min-device-width: 683px) and (max-device-width: 1024.5px){
+            section.gallary{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(6, 1fr);
+                div{
+                    max-height: 301px;
+                    max-width: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    position: relative;
+                    &:nth-child(odd)::before{
+                        content: '';
+                        position: absolute;
+                        top: 0; right: 0;
+                        bottom: 0; left: 0;
+                        background-color: #838383;
+                        opacity: 40%;
+                    }
+                    &:nth-child(even)::before{
+                        content: '';
+                        position: absolute;
+                        top: 0; right: 0;
+                        bottom: 0; left: 0;
+                        background-color: #DDDDDD;
+                        opacity: 40%;
+                    }
+                    &:nth-child(6)::before{
+                        content: '';
+                        position: absolute;
+                        top: 0; right: 0;
+                        bottom: 0; left: 0;
+                        background-color: #10C9C3;
+                        opacity: 40%;
+                    }
+                    &:nth-child(6)::after{
+                        content: '';
+                        position: absolute;
+                        top: 0; right: 0;
+                        bottom: 0; left: 0;
+                        background: url("/static/image/gallary/look.svg");
+                        background-size: 48px, 30px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    img{
+                        width: 100%;
+                        background-color: black;
+                        object-fit: cover;
+                    }
+                }
+            } 
+        }
+        @media only screen and (min-device-width: 1024.5px) and (max-device-width: 1365px) {
+            section.gallary{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                div{
+                    max-height: 301px;
+                    max-width: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    position: relative;
+                    &:nth-child(odd)::before{
+                        content: '';
+                        position: absolute;
+                        top: 0; right: 0;
+                        bottom: 0; left: 0;
+                        background-color: #838383;
+                        opacity: 40%;
+                    }
+                    &:nth-child(even)::before{
+                        content: '';
+                        position: absolute;
+                        top: 0; right: 0;
+                        bottom: 0; left: 0;
+                        background-color: #DDDDDD;
+                        opacity: 40%;
+                    }
+                    &:nth-child(5)::before{
+                        content: '';
+                        position: absolute;
+                        top: 0; right: 0;
+                        bottom: 0; left: 0;
+                        background-color: #10C9C3;
+                        opacity: 40%;
+                    }
+                    &:nth-child(5)::after{
+                        content: '';
+                        position: absolute;
+                        top: 0; right: 0;
+                        bottom: 0; left: 0;
+                        background: url("/static/image/gallary/look.svg");
+                        background-size: 48px, 30px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    img{
+                        width: 100%;
+                        background-color: black;
+                        object-fit: cover;
+                    }
+                }
+            } 
+        }
+        @media only screen and (min-device-width: 1366px) {
+            section.gallary{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                div{
+                    max-height: 301px;
+                    max-width: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    position: relative;
+                    &:nth-child(odd)::before{
+                        content: '';
+                        position: absolute;
+                        top: 0; right: 0;
+                        bottom: 0; left: 0;
+                        background-color: #838383;
+                        opacity: 40%;
+                    }
+                    &:nth-child(even)::before{
+                        content: '';
+                        position: absolute;
+                        top: 0; right: 0;
+                        bottom: 0; left: 0;
+                        background-color: #DDDDDD;
+                        opacity: 40%;
+                    }
+                    &:nth-child(6)::before{
+                        content: '';
+                        position: absolute;
+                        top: 0; right: 0;
+                        bottom: 0; left: 0;
+                        background-color: #10C9C3;
+                        opacity: 40%;
+                    }
+                    &:nth-child(6)::after{
+                        content: '';
+                        position: absolute;
+                        top: 0; right: 0;
+                        bottom: 0; left: 0;
+                        background: url("/static/image/gallary/look.svg");
+                        background-size: 48px, 30px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    img{
+                        width: 100%;
+                        background-color: black;
+                        object-fit: cover;
+                    }
+                }
+            } 
+        }
+        
     }
 }
 
